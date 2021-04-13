@@ -6,7 +6,7 @@ namespace VariablesCS
     {
         static void AboutMe()
         {
-            //Creating Variables
+            //Creating Variables Section Method
             Console.WriteLine("About Me");
             Console.WriteLine("~~~~~~~~~~");
             var numberOfCupsOfCoffee = 0;
@@ -16,31 +16,24 @@ namespace VariablesCS
             Console.WriteLine($"My name is: {fullName}");
             Console.WriteLine($"I drink {numberOfCupsOfCoffee} many cups of coffee a day");
             Console.WriteLine($"Today's date is {today}");
+            Console.WriteLine($"The time is {time}");
             Console.WriteLine("");
         }
+
+        static string AskUserName(string prompt)
+        {
+            Console.Write(prompt);
+            var userInput = Console.ReadLine();
+
+            return userInput;
+        }
+
         static void Main(string[] args)
         {
             AboutMe();
-            // //Creating Variables
-            // Console.WriteLine("About Me");
-            // Console.WriteLine("~~~~~~~~~~");
-            // var numberOfCupsOfCoffee = 0;
-            // var fullName = "Bianca Brown";
-            // var today = DateTime.Now;
-            // var time = DateTime.Now.ToLongTimeString();
-            // Console.WriteLine($"My name is: {fullName}");
-            // Console.WriteLine($"I drink {numberOfCupsOfCoffee} many cups of coffee a day");
-            // Console.WriteLine($"Today's date is {today}");
-            // Console.WriteLine("");
 
-            //Pulling just the time from DateTime
-            // Console.WriteLine($"The time is {time}");
-
-            //Getting Input From the User
-            Console.Write("What is your name? ");
-            var userName = Console.ReadLine();
-
-            //Is Your Name Alice?
+            //Getting Input From the User with AskUserName Method
+            var userName = AskUserName("What is your name? ");
             if (userName == "Alice" || userName == "alice")
             {
                 Console.WriteLine("HEY ALICE!!");
@@ -54,6 +47,7 @@ namespace VariablesCS
             Console.WriteLine("");
             Console.Write($"{userName}, will you enter a number? ");
             var firstNumberAsString = Console.ReadLine();
+
             Console.WriteLine($"Awesome, thank you! {userName}.");
             Console.Write("Will you enter another number? ");
             var secondNumberAsString = Console.ReadLine();
