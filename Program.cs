@@ -7,22 +7,38 @@ namespace VariablesCS
         static void Main(string[] args)
         {
             //Creating Variables
+            Console.WriteLine("About Me");
+            Console.WriteLine("~~~~~~~~~~");
             var numberOfCupsOfCoffee = 0;
             var fullName = "Bianca Brown";
             var today = DateTime.Now;
-            Console.WriteLine($"I drink this many cups of coffee a day: { numberOfCupsOfCoffee}. My name is: { fullName}. Today's Date is: { today}.");
+            Console.WriteLine($"My name is: {fullName}");
+            Console.WriteLine($"I drink {numberOfCupsOfCoffee} many cups of coffee a day");
+            Console.WriteLine($"Today's date is {today}");
+            Console.WriteLine("");
 
             //Getting Input From the User
             Console.WriteLine("");
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            Console.WriteLine($"Hi there {userName}! Welcome!");
+            //Console.WriteLine($"Hi there {userName}! Welcome!");
+
+            //Is Your Name Alice?
+            if (userName == "Alice" || userName == "alice")
+            {
+                Console.WriteLine("HEY ALICE!!");
+            }
+            else
+            {
+                Console.WriteLine($"Hmm, where's Alice? That's alright, hi there {userName}");
+            }
 
             //Getting Different Types of Input From the User
             Console.WriteLine("");
             Console.Write($"{userName}, will you enter a number? ");
             var firstNumberAsString = Console.ReadLine();
-            Console.Write($"Awesome, thank you! {userName}, will you enter another number? ");
+            Console.WriteLine($"Awesome, thank you! {userName}.");
+            Console.Write("Will you enter another number? ");
             var secondNumberAsString = Console.ReadLine();
 
             //Converting String Input Into Numbers
@@ -69,6 +85,8 @@ namespace VariablesCS
             Console.WriteLine("~~~~~~~~~~~~~~");
             var remainder = firstOperand % secondOperand;
             Console.WriteLine($"The remainder of the two divided numbers are: {remainder}");
+
+
         }
     }
 }
