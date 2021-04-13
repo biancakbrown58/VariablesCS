@@ -68,36 +68,30 @@ namespace VariablesCS
             Console.WriteLine("~~~~~~~~~");
             var sum = firstOperand + secondOperand;
             Console.WriteLine($"The total of your two numbers are: {sum}");
-            Console.WriteLine("");
 
             //Subtracting
             Console.WriteLine("-Subtracting-");
             Console.WriteLine("~~~~~~~~~~~~~~");
             var difference = secondOperand - firstOperand;
             Console.WriteLine($"The difference of you two numbers are: {difference}");
-            Console.WriteLine("");
 
             //Multiply
             Console.WriteLine("*Multiplying*");
             Console.WriteLine("~~~~~~~~~~~~~~~~");
             var product = firstOperand * secondOperand;
             Console.WriteLine($"Your two numbers multiplied are: {product}");
-            Console.WriteLine("");
 
             //Divide
             Console.WriteLine("/Dividing/");
             Console.WriteLine("~~~~~~~~~~~~~~");
             var quotient = firstOperand / secondOperand;
             Console.WriteLine($"Your two numbers divied are: {quotient}");
-            Console.WriteLine("");
 
             //Remainder
             Console.WriteLine("%Remainder%");
             Console.WriteLine("~~~~~~~~~~~~~~");
             var remainder = firstOperand % secondOperand;
             Console.WriteLine($"The remainder of the two divided numbers are: {remainder}");
-
-
         }
     }
 }
