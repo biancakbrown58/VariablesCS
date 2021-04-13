@@ -4,7 +4,7 @@ namespace VariablesCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void AboutMe()
         {
             //Creating Variables
             Console.WriteLine("About Me");
@@ -12,16 +12,33 @@ namespace VariablesCS
             var numberOfCupsOfCoffee = 0;
             var fullName = "Bianca Brown";
             var today = DateTime.Now;
+            var time = DateTime.Now.ToLongTimeString();
             Console.WriteLine($"My name is: {fullName}");
             Console.WriteLine($"I drink {numberOfCupsOfCoffee} many cups of coffee a day");
             Console.WriteLine($"Today's date is {today}");
             Console.WriteLine("");
+        }
+        static void Main(string[] args)
+        {
+            AboutMe();
+            // //Creating Variables
+            // Console.WriteLine("About Me");
+            // Console.WriteLine("~~~~~~~~~~");
+            // var numberOfCupsOfCoffee = 0;
+            // var fullName = "Bianca Brown";
+            // var today = DateTime.Now;
+            // var time = DateTime.Now.ToLongTimeString();
+            // Console.WriteLine($"My name is: {fullName}");
+            // Console.WriteLine($"I drink {numberOfCupsOfCoffee} many cups of coffee a day");
+            // Console.WriteLine($"Today's date is {today}");
+            // Console.WriteLine("");
+
+            //Pulling just the time from DateTime
+            // Console.WriteLine($"The time is {time}");
 
             //Getting Input From the User
-            Console.WriteLine("");
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            //Console.WriteLine($"Hi there {userName}! Welcome!");
 
             //Is Your Name Alice?
             if (userName == "Alice" || userName == "alice")
@@ -45,7 +62,7 @@ namespace VariablesCS
             var firstOperand = double.Parse(firstNumberAsString);
             var secondOperand = double.Parse(secondNumberAsString);
 
-            //Doing Math
+            //Doing Math Portion
             Console.WriteLine("");
 
             //Results Message
